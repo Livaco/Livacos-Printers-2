@@ -55,3 +55,11 @@ LPrintTwo.Config.Diamond.TypePerCycle = 4
 
 // How much $$ should be added per cycle.
 LPrintTwo.Config.Diamond.MoneyPerCycle = 500
+
+/*
+OShop Settings
+Settings if you have https://garrysmods.org/download/61577/oshop-a-modern-npc-shop and want to use OShop Support
+*/
+
+// If false, OShop support will not be enabled at all.
+LPrintTwo.Config.EnableOShop = true

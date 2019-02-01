@@ -28,7 +28,7 @@ hook.Add("PlayerConnect", "lprinttwo_checkversion", function()
   PrintToConsole("Running version check!")
 
   // Post request.
-  http.Post("https://livacoweb.000webhostapp.com/libaries/versions/lprinttwo.php", {RunningVar = "1.0"}, function(result)
+  http.Post("https://livacoweb.000webhostapp.com/libaries/versions/lprinttwo.php", {RunningVar = "1.1"}, function(result)
 
     PrintToConsole(result)
 
@@ -40,21 +40,5 @@ hook.Add("PlayerConnect", "lprinttwo_checkversion", function()
   end)
 
   RanCheck = true
-
-end)
-
-// bLogs
-hook.Add("bLogs_FullyLoaded", "lprinttwo_blogs", function()
-
-  PrintToConsole("bLogs detected, loading.")
-  PrintToConsole("Note that I do not own bLogs, so this is untested. If it does not please make a ticket on my website at livaco.tk, and il remove the feature, and stop your server from breaking!")
-
-  LPrintTwo.blogs = bLogs:Module()
-
-  LPrintTwo.blogs.Category = "Livaco's Scripts"
-  LPrintTwo.blogs.Name     = "Livaco's Printers 2"
-  LPrintTwo.blogs.Colour   = Color(255, 0, 0)
-
-  bLogs:AddModule(LPrintTwo.blogs)
 
 end)
